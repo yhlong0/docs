@@ -6,6 +6,7 @@ sidebar_position: 1
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import CodeBlock from '@theme/CodeBlock';
 
 runpodctl is an [open-source command-line interface (CLI)](https://github.com/runpod/runpodctl). You can use runpodctl to work with Pods and RunPod projects.
 
@@ -16,23 +17,23 @@ To install runpodctl on your local machine, run the appropriate command for your
 <Tabs>
   <TabItem value="mac" label="macOS">
 
-```bash
+<CodeBlock language="bash">
 brew install runpod/runpodctl/runpodctl
-```
+</CodeBlock>
 
 </TabItem>
   <TabItem value="linux" label="Linux">
 
-```bash
+<CodeBlock language="bash">
 wget -qO- cli.runpod.net | sudo bash
-```
+</CodeBlock>
 
 </TabItem>
   <TabItem value="windows" label="Windows">
 
-```bash
+<CodeBlock language="bash">
 wget https://github.com/runpod/runpodctl/releases/download/v1.12.3/runpodctl-windows-amd64.exe -O runpodctl.exe
-```
+</CodeBlock>
 
 </TabItem>
 </Tabs>
@@ -54,30 +55,30 @@ Keep your API key secret. Anyone with the key can gain full access to your accou
 
 Now that you've created an API key, run the following command to add it to runpodctl:
 
-```bash
+<CodeBlock language="bash">
 runpodctl config --apiKey your-api-key
-```
+</CodeBlock>
 
 You should see something similar to the following output:
 
-```bash
+<CodeBlock language="bash">
 saved apiKey into config file: /Users/runpod/.runpod/config.toml
-```
+</CodeBlock>
 
 Now that you've configured an API key, check that runpodctl installed successfully. Run the following command:
 
-```bash
+<CodeBlock language="bash">
 runpodctl version
-```
+</CodeBlock>
 
 You should see which version is installed.
 
-```bash
+<CodeBlock language="bash">
 runpodctl v1.13.0
-```
+</CodeBlock>
 
 If at any point you need help with a command, you can use the `--help` flag to see documentation on the command you're running.
 
-```bash
+<CodeBlock language="bash">
 runpodctl --help
-```
+</CodeBlock>
